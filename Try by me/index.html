@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev - Detective</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="bg-gradient-to-br from-white to-slate-300 w-[100vw] h-[100vh] flex items-center justify-center">
+        <div class="w-[70%] max-w-[612px] flex flex-col gap-5">
+            <!-- dark mode header  -->
+            <header class="flex justify-between">
+                <h1 class="text-slate-600 font-extrabold text-xl font">DevDetective</h1>
+                <div class="flex font text-sm font-extrabold tracking-widest gap-4 items-center justify-center">
+                    <p class="text-slate-500 text-[14px]">DARK</p>
+                    <div class="w-5 pb-1"><img src="./assets/images/moon-icon.svg" alt=""></div>
+                </div>
+            </header>
+            <main>
+                <!-- search div  -->
+                <div class="flex font bg-white p-2 items-center gap-2 rounded-lg pl-5 shadow-lg">
+                    <img src="./assets/images/search-icon.svg" alt="" class="w-4 h-4 opacity-70">
+                    <input type="text" placeholder="Enter a GitHub username..." class="w-[500px] font-semibold outline-none" input>
+                    <button class="bg-blue-500 text-white p-3 rounded-md text-sm font-semibold px-4" searchBtn>Search</button>
+                </div>
+                <!-- profile box  -->
+                <div class="shadow-lg p-6 bg-white mt-6 flex gap-6">
+                    <img userImg class="w-24 h-24">
+                    <div class="w-full">
+                        <div class="flex justify-between items-center">
+                            <h2 userName class="font text-xl font-semibold">Pranay Gupta</h2>
+                            <p userDOB class="text-sm opacity-70 font-semibold font">Joined 06 May 2020</p>
+                        </div>
+                        <a userProfileLink class="font">@thepranaygupta</a>
+                        <p userInfo class="font pt-3 text-sm w-[300px] opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia laboriosam quibusdam, itaque aliquid repellat.</p>
+                        <div class="flex my-6 bg-gray-100 justify-between px-8 py-2">
+                            <div class="flex flex-col gap-2">
+                                <p repo class="font text-xs opacity-70">Repo</p>
+                                <p repoCount class="font font-extrabold text-xl">70</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p followers class="font text-xs opacity-70">Followers</p>
+                                <p followersCount class="font font-extrabold text-xl">409</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p following class="font text-xs opacity-70">Following</p>
+                                <p followingCount class="font font-extrabold text-xl">139</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 mt-6">
+                            <div class="flex justify-between">
+                                <div>
+                                    <img locationLogo>
+                                    <p location class="font text-sm">Kolkata, India</p>
+                                </div>
+                                <div>
+                                    <a userGithubLink class="font text-sm">https://thepranaygupta.github.io</a>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <img twitterLogo>
+                                    <a twitterLink class="font text-sm">thepranaygupta</a>
+                                </div>
+                                <div>
+                                    <img permissionLogo>
+                                    <p permission class="font text-sm">@primissionless</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
